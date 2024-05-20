@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+*{
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+body{
+  margin: 0;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: x-large;
+  margin: 0;
+}
+.container{
+  width: 300px;
+  background-color: transparent;
+  border-radius: 10px;
+  /* filter: drop-shadow(2px 2px 5px #00000057); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.loading-wrapper{
+  height: 10px;
+  width: 90%;
+  margin-inline:5% ;
+  background: #2f00ff;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+.loader{
+  background-color: rgb(224, 224, 224);
+  height: 100%;
+  width: 80%;
+  animation: loading 2s ease infinite;
+}
+@keyframes loading{
+  0%{
+    transform: translateX(-100%);
+  }
+  1%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(130%);
+  }
+}
